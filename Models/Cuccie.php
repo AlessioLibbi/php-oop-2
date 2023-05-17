@@ -1,14 +1,14 @@
 <?php
 require_once __DIR__ . "/Prodotti.php";
-class Cuccie extends Categoria
+class Cuccie extends Prodotti
 {
-    public $casetta;
-    public $cuscino;
+    public $colore;
+    public $altezza;
 
-    function __construct($_casetta, $_cuscino, $_nome, $_prezzo, $_poster)
+    function __construct($_colore, $_altezza, $_nome, $_prezzo, Categoria $_categoria, $_poster, Animali $_animale)
     {
-        parent::__construct($_nome, $_prezzo, $_poster);
-        $this->casetta->$_casetta;
-        $this->cuscino->$_cuscino;
+        parent::__construct($_nome, $_prezzo, $_categoria, $_poster, $_animale);
+        $this->colore = $_colore;
+        $this->altezza = $_altezza;
     }
 }
