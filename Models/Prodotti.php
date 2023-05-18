@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/Eatable.php";
 class Prodotti
 {
     public $nome;
